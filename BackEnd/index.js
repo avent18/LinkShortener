@@ -12,11 +12,11 @@ app.use(cors({ origin: "http://localhost:5173" }));
 
 // Connect to PostgreSQL
 const db = new pg.Client({
-  user: process.env.USER,
-  host: process.env.HOST,
-  database: process.env.DATABASE,
-  password: process.env.PASSWORD,
-  port: process.env.PORT,
+  user: "postgres",
+  host: "localhost",
+  database: "url_shortener",
+  password: "naveen",
+  port: 5432,
 });
 db.connect();
 
