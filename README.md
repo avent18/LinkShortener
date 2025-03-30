@@ -26,7 +26,7 @@ A simple URL shortener built with **Node.js, Express, PostgreSQL, and React**.
    ```
 2. Update database credentials in `index.js` (backend file):
    ```js
-   const pool = new Pool({
+   const db = new db.Client({
      user: "your_username",
      host: "localhost",
      database: "urlShortener",
